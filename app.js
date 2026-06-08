@@ -130,10 +130,31 @@ let description = `this is ${person.firstName} ${person.lastName} he is ${person
 
 //console.log(description);
 
-
 // using bracket notation
 // console.log(person["firstName"]);
 // console.log(person["lastName"]);
 // console.log(person["age"]);
 // console.log(person["id"]);
 // console.log(person["height"]);
+
+const car = {
+  color: "red",
+  release_year: 2010,
+  brand: "Toyota",
+  model: "Camry",
+  maxSpeed: 250,
+  age: 16,
+  wheels: 4,
+};
+
+// add a new property
+car.owner = "Moslem Ajra";
+console.log(car);
+
+// delete property
+delete car.release_year;
+console.log(car);
+
+for (let key in car) {
+  console.log(key, car[key]);
+}
